@@ -6,7 +6,7 @@ import { Parallax } from "react-parallax";
 const HeroSection = () => {
   return (
     <Parallax
-      blur={{ min: -45, max: 15 }}
+      blur={{ min: -15, max: 15 }}
       bgImage="/mask_group.png" // Replace with your image path
       strength={100}
       
@@ -19,10 +19,10 @@ const HeroSection = () => {
         alignItems="center"
         textAlign="center"
       >
-        <Heading fontSize="7xl" fontWeight="bold" color="white">
+        <Heading fontSize={{base:"5xl",md:"7xl"}} fontWeight="bold" color="white">
           Architecting
         </Heading>
-        <Heading fontSize="7xl" fontWeight="bold" color="white">
+        <Heading fontSize={{base:"5xl",md:"7xl"}} fontWeight="bold" color="white">
           Decentralized Dreams
         </Heading>
         <Text fontSize="lg" color="white" marginTop="4">

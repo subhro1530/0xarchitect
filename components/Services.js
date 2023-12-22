@@ -17,7 +17,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <Box textAlign="center">
+    <Box textAlign="center" paddingBottom="80px">
       <Heading fontSize="3xl" paddingTop="80px" fontWeight="bold" mb="6">
         Services
       </Heading>
@@ -52,7 +52,7 @@ const Services = () => {
             <Image
               src="/service.png"
               alt={`Service ${index + 1}`}
-              mb="4"
+              mb="2"
               height={39}
               width={39}
             />

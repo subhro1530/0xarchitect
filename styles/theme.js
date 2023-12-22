@@ -5,7 +5,8 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "#1B1330",
+        bgGradient:
+          "linear(135deg,#1a1635, #182549,#1a1635, #182549,#1a1635, #182549)",
         color: "white",
         fontFamily: "Michroma, sans-serif", // Use Michroma font
       },

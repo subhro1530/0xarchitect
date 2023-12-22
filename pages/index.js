@@ -4,6 +4,10 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import { Box } from "@chakra-ui/react";
 import Services from "@/components/Services";
+import FutureSection from "@/components/FutureSection";
+import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
+import Teams from "@/components/Teams";
 
 const HomePage = () => {
   return (
@@ -15,6 +19,10 @@ const HomePage = () => {
       <Navbar />
       <HeroSection />
       <Services />
+      <FutureSection />
+      <Teams />
+      <ContactUs />
+      <Footer />
     </Box>
   );
 };
