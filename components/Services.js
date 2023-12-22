@@ -24,8 +24,8 @@ const Services = () => {
       <Text
         fontSize="lg"
         color="gray.600"
-        paddingLeft="10%"
-        paddingRight="10%"
+        paddingLeft={{ base: "4rem", md: "8rem" }}
+        paddingRight={{ base: "4rem", md: "8rem" }}
         mb="8"
       >
         Discover our comprehensive suite of services, meticulously crafted to
@@ -38,8 +38,8 @@ const Services = () => {
           borderTop: "1px solid white",
           borderBottom: "1px solid white",
           width: "100",
-          paddingLeft: "30px",
-          paddingRight: "30px",
+          paddingLeft: "60px",
+          paddingRight: "60px",
         }}
       >
         {servicesData.map((service, index) => (

@@ -34,6 +34,20 @@ const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin ullamcorper leo in eleifend. In at hendrerit tellus. Nunc vel ullamcorper eros.",
     imageSrc: "/box.png",
   },
+  {
+    id: 4,
+    title: "Lorem Ipsum 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin ullamcorper leo in eleifend. In at hendrerit tellus. Nunc vel ullamcorper eros.",
+    imageSrc: "/box.png",
+  },
+  {
+    id: 5,
+    title: "Lorem Ipsum 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin ullamcorper leo in eleifend. In at hendrerit tellus. Nunc vel ullamcorper eros.",
+    imageSrc: "/box.png",
+  },
   // Add more projects as needed
 ];
 
@@ -49,7 +63,7 @@ const Projects = () => {
   };
 
   return (
-    <Box paddingY="8" color="white" textAlign="center">
+    <Box paddingY="8" color="white" textAlign="center" overflow="hidden">
       <Heading
         fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
         fontWeight="bold"
@@ -63,7 +77,8 @@ const Projects = () => {
           onClick={handlePrev}
           position="absolute"
           left="2"
-          top="4"
+          top="50%"
+          transform="translateY(-50%)"
           color="teal.500"
           _hover={{ color: "teal.300" }}
         />
@@ -72,15 +87,16 @@ const Projects = () => {
           onClick={handleNext}
           position="absolute"
           right="2"
-          top="4"
+          top="50%"
+          transform="translateY(-50%)"
           color="teal.500"
           _hover={{ color: "teal.300" }}
         />
         <HStack
           spacing={{ base: "2", md: "4", lg: "8" }}
-          align="center"
-          overflowX="auto"
-          maxW="100%"
+          align="flex-start"
+          overflowX="hidden"
+          maxW="80%"
           mx="auto"
           px={{ base: "2", md: "4", lg: "8" }}
           py="2"
@@ -93,12 +109,16 @@ const Projects = () => {
               borderColor="white"
               borderRadius="md"
               overflow="hidden"
-              height={{ base: "60vh", md: "70vh", lg: "80vh" }}
-              width={{ base: "70vw", md: "60vw", lg: "50vw" }}
+              height={{ base: "40vh", md: "50vh", lg: "60vh" }}
+              width={{ base: "50vw", md: "40vw", lg: "30vw" }}
               flexShrink="0"
               boxShadow="lg"
               _hover={{ boxShadow: "xl" }}
               position="relative"
+              transform={`translateX(${
+                (index - activeProject) * (100 / projectsData.length)
+              }%)`}
+              transition="transform 0.3s ease"
             >
               <Image
                 src={project.imageSrc}
