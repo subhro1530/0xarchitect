@@ -8,6 +8,7 @@ import FutureSection from "@/components/FutureSection";
 import Footer from "@/components/Footer";
 import ContactUs from "@/components/ContactUs";
 import Teams from "@/components/Teams";
+import Projects from "@/components/Projects";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <HeroSection />
       <Services />
       <FutureSection />
+      <Projects />
       <Teams />
       <ContactUs />
       <Footer />

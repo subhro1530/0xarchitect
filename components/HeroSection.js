@@ -9,7 +9,6 @@ const HeroSection = () => {
       blur={{ min: -15, max: 15 }}
       bgImage="/mask_group.png" // Replace with your image path
       strength={100}
-      
     >
       <Box
         height="100vh"
@@ -19,16 +18,28 @@ const HeroSection = () => {
         alignItems="center"
         textAlign="center"
       >
-        <Heading fontSize={{base:"5xl",md:"7xl"}} fontWeight="bold" color="white">
+        <Heading
+          fontSize={{ base: "4xl", md: "7xl" }}
+          fontWeight="bold"
+          color="white"
+        >
           Architecting
         </Heading>
-        <Heading fontSize={{base:"5xl",md:"7xl"}} fontWeight="bold" color="white">
+        <Heading
+          fontSize={{ base: "4xl", md: "7xl" }}
+          fontWeight="bold"
+          color="white"
+        >
           Decentralized Dreams
         </Heading>
-        <Text fontSize="lg" color="white" marginTop="4">
+        <Text fontSize={{ base: "lg", md: "xl" }} color="white" marginTop="4">
           Crafting Web3 Experiences Beyond Imagination
         </Text>
-        <Button colorScheme="teal" size="lg" marginTop="6">
+        <Button
+          colorScheme="teal"
+          size={{ base: "sm", md: "lg" }}
+          marginTop="6"
+        >
           Schedule
         </Button>
       </Box>
